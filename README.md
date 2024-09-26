@@ -56,14 +56,14 @@ Open the project in Visual Studio, or use the following command to compile the c
 
 
 ```bash
-csc Program.cs
+csc bypass.cs
 ```
 
 **Alternatively, you can compile in Release mode for better optimization:
 
 
 ```bash
-csc -optimize Program.cs
+csc -optimize bypass.cs
 ```
 
 
@@ -88,7 +88,7 @@ Transfer the compiled .exe file to the Windows machine. You can execute the file
 
 
 ```bash
-Program.exe
+bypass.exe
 ```
 
 

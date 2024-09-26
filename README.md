@@ -35,8 +35,8 @@ This project demonstrates how to bypass EDR and antivirus protection using Windo
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/EDR-Antivirus-Bypass-Shell.git
-cd EDR-Antivirus-Bypass-Shell
+https://github.com/murat-exp/EDR-Antivirus-Bypass-to-Gain-Shell-Access.git
+cd EDR-Antivirus-Bypass-Shell-Access
 ```
 
 

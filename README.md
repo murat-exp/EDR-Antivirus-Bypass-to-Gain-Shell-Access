@@ -24,7 +24,7 @@ This project demonstrates how to bypass EDR and antivirus protection using Windo
 
 ## Requirements
 
-- Windows Operating System (Tested on Windows 10)
+- Windows Operating System (Tested on Windows 11 Pro)
 - Kali Linux (For reverse shell listener)
 - Visual Studio or any C# compiler
 

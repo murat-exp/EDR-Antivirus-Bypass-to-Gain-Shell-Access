@@ -108,6 +108,9 @@ meterpreter > shell
 To avoid detection by advanced EDR solutions, consider using techniques like process injection, obfuscation, or AMSI bypasses. This PoC can be extended with these methods for more robust evasion.
 
 
+This POC bypasses all current AV and EDR solutions.  
+
+I will soon share with you the codes I have developed with more advanced methods.
 
 
 

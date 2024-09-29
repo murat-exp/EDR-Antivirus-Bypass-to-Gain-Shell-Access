@@ -1,6 +1,5 @@
 # EDR-Antivirus-Bypass-to-Gain-Shell-Access
 
-## EDR & Antivirus Bypass to Gain Shell Access
 
 This repository contains a **proof-of-concept (PoC)** for bypassing EDR and antivirus solutions using a memory injection technique. The code executes shellcode that spawns a reverse shell, successfully evading detection by various security mechanisms.
 

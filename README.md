@@ -55,14 +55,14 @@ Open the project in Visual Studio, or use the following command to compile the c
 
 
 ```bash
-csc bypass.cs
+csc loader.cs
 ```
 
 **Alternatively, you can compile in Release mode for better optimization:
 
 
 ```bash
-csc -optimize bypass.cs
+csc -optimize loader.cs
 ```
 
 
@@ -87,7 +87,7 @@ Transfer the compiled .exe file to the Windows machine. You can execute the file
 
 
 ```bash
-bypass.exe
+loader.exe
 ```
 
 

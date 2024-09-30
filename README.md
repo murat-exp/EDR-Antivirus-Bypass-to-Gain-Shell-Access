@@ -113,7 +113,7 @@ This POC bypasses all current AV and EDR solutions.
 I will soon share with you the codes I have developed with more advanced methods.
 
 
-
+loader.png
 
 
 
